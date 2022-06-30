@@ -9,6 +9,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
@@ -16,77 +17,55 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <section>
-        <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-secondary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">John Doe</a>
-            <button class="navbar-toggler" 
-              type="button" 
-              data-bs-toggle="collapse" 
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link text-white" href="#portfolio">Portfolio</a>
-                <a class="nav-link text-white" href="#about">About</a>
-                <a class="nav-link text-white" href="#contact">Contact</a>
-                <i class="bi bi-envelope text-white"></i>
-              </div>
-            </div>
-          </div>
-        </nav>
-    </section>
+    <header class="top-nav">
+      <div class="topnav">
+        <a href="#home" class="active">John Doe</a>
+        <div class="my-link">
+        </div>
+        <a href="javascript:void(0);" class="icon">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
       <!-- HOME SECTION -->
-      <section class="container-fluid bg-dark pt-5 pt-lg-0">
+      <section class="container-fluid bg-dark">
         <div class="row py-5 py-lg-2">
-          <div class="col-lg-1 d-flex align-items-center order-3 order-lg-0">
-            <ul class="tags flex-lg-column flex-md-row">
-              <li class="elements">
-                <a href="#">
-                  <i class="bi bi-twitter text-white"></i>
-                </a>
-              </li>
-              <li class="mb-2 me-2">
-                <a href="#">
-                  <i class="bi bi-linkedin text-white"></i>
-                </a>
-              </li>
-              <li class="mb-2 me-2">
-                <a href="#">
-                  <i class="bi bi-instagram text-white"></i>
-                </a>
-              </li>
-              <li class="mb-2 me-2">
-                <a href="#">
-                  <i class="bi bi-github text-white"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-5 text-white d-flex flex-column justify-content-center">
-            <h1 class="text-danger h1 mb-3">
-              Hey there.<br />
+          <div>
+            <h1 class="heading">
+              Hey There.<br />
               I’m Alex
             </h1>
-            <h2 class="mb-3">I’m a software developer</h2>
+            <h2 class="card-title">I’m a software developer</h2>
             <p class="card-text">
               I can help you build a product , feature or website Look through
               some of my work and experience! If you like what you see and have a
               project you need coded, don’t hestiate to contact me.
             </p>
           </div>
-          <div class="col-lg-6 d-flex justify-content-end d-none d-lg-block">
-            <img
-              src="images/Illustration-header@2x.png"
-              class="img-fluid"
-              alt="home section decoration black and white image"
-            />
-          </div>
+        </div>
+        <div class="d-flex align-items-center order-3 order-lg-0">
+          <ul class="element">
+            <li class="mb-2 me-2">
+              <a href="#">
+                <i class="bi bi-twitter text-white"></i>
+              </a>
+            </li>
+            <li class="mb-2 me-2">
+              <a href="#">
+                <i class="bi bi-linkedin text-white"></i>
+              </a>
+            </li>
+            <li class="mb-2 me-2">
+              <a href="#">
+                <i class="bi bi-instagram text-white"></i>
+              </a>
+            </li>
+            <li class="mb-2 me-2">
+              <a href="#">
+                <i class="bi bi-github text-white"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
       <!-- Works Section -->
@@ -375,19 +354,17 @@
           <div class="col-lg-1"></div>
         </div>
       </section>
-      <footer id="contact" class="container-fluid mt-5">
+      <footer id="contact" class="container-fluid">
         <div class="row">
-          <div class="col-lg-1"></div>
-          <div class="col-lg-3 col-sm-12">
-            <h2 class="fw-bold mb-3 text-center text-lg-start">Contact Me</h2>
-            <p class="text-body fs-4 fw-bold text-center text-lg-start">
+          <div class="text">
+            <p class="text-body">
               I'm always interested in hearing about new projects, so if you'd
               like to chat please get in touch.
             </p>
           </div>
           <div class="col-lg-6 ps-lg-5 ms-0 ms-lg-5 col-sm-12">
             <form action="/action_page.php">
-              <div class="mb-3">
+              <div class="">
                 <label for="fullname" class="form-label">Full Name:</label>
                 <input
                   type="text"
@@ -397,7 +374,7 @@
                   name="fullname"
                 />
               </div>
-              <div class="mb-3 mt-3">
+              <div>
                 <label for="email" class="form-label">Email:</label>
                 <input
                   type="email"
@@ -408,7 +385,7 @@
                 />
               </div>
   
-              <div class="mb-3 mt-3">
+              <div>
                 <label for="comment">Comments:</label>
                 <textarea
                   class="form-control"

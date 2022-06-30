@@ -1,9 +1,59 @@
 
+.topnav {
+  overflow: hidden;
+  background-color: gray;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: #343a40;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.active {
+  background-color: #343a40;
+  color: white;
+}
+
 .navbar-nav {
   width: 100%;
   display: flex;
   justify-content: end;
   align-items: center;
+}
+
+.element {
+  display: flex;
+  color: dark;
+  list-style: none;
+  gap: 1.5rem;
+  position: absolute;
+  margin-top: 0%;
+}
+
+.container-fluid {
+  background-image: url('images/illustration-header-mobile.png');
+  background-position: right 0 bottom -43px;
+  background-repeat: no-repeat;
+  background-size: 135px;
+  height: 484px;
+  color: #fff;
+  padding: 0;
 }
 
 .home {
@@ -13,9 +63,18 @@
   justify-content: center;
 }
 
-.container-fluid {
-  background: dark;
-  padding-top: 5;
+.heading {
+  color: #ff6b00;
+  margin-top: 1.2rem;
+  width: 327px;
+  height: 124px;
+  top: 120px;
+  left: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
 }
 
 .row {
@@ -29,17 +88,41 @@
 }
 
 .card-text {
-  color: white;
+  position: relative;
+  width: 327px;
+  height: 123px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
 
 .card-title {
   color: white;
+  width: 327px;
+  height: 27px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
 }
 
 .image-1 {
   display: flex;
   justify-content: end;
   background-position: bottom right;
+  background-image: url('..images/illustration-header-mobile.png');
+  position: absolute;
+  left: 34.57%;
+  right: 37.52%;
+  top: 60.59%;
+  bottom: 9.36%;
 }
 
 .image {
@@ -47,15 +130,26 @@
   justify-content: end;
 }
 
+.text {
+  color: black;
+}
+
+.button {
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+  background-color: orange;
+}
+
 .footer {
   display: flex;
   color: dark;
   justify-content: center;
   list-style: none;
-  gap: 0.5rem;
+  gap: 1.5rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .tags {
     display: flex;
     align-items: center;
@@ -67,5 +161,9 @@
     color: dark;
     justify-content: center;
     list-style: none;
+  }
+
+  .card-text .card-title .element {
+    margin-left: 5px;
   }
 }
